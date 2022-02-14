@@ -1,0 +1,6 @@
+1. Create a number range between 0 and 10 
+2. The computer will randomly select one number between the given range
+3. The user will try to guess the number by inputing different values
+    3a. If the correct value is minor than the user input, the computer will say "less";
+    3b, At the same time, if the correct value is greater than the input, it will say "more"
+4. Once the user guesses the value, it will say "correct!"
