@@ -1,25 +1,43 @@
 from random import randrange
-(randrange(10))
 
-randomInput = (randrange(10))
+def checkGuess(userInput, randomNum):
+    if userInput == randomNum:
+        return 'Correct!'
+    if userInput > randomNum:
+        return 'Less!'
+    if userInput < randomNum:
+        return 'More!'
 
-print("Choose a number between 0 and 10")
-userNumber = input()
-userNumber = int(userNumber)
+def main():
+    result = checkGuess(2, 4)
+    print(result)
 
-while True:
-    if userNumber < randomInput:
-        print("more")
-        print("Choose a number between 0 and 10")
-        userNumber = input()
-        userNumber = int(userNumber)
+    (randrange(10))
 
-    elif userNumber > randomInput:
-        print("less")
-        print("Choose a number between 0 and 10")
-        userNumber = input()
-        userNumber = int(userNumber)
+    randomInput = (randrange(10))
 
-    else:
-        print("correct!")
-        break
+    print("Choose a number between 0 and 10")
+    userNumber = input()
+    userNumber = int(userNumber)
+
+
+
+    while True:
+        if userNumber < randomInput:
+            print("more")
+            print("Choose a number between 0 and 10")
+            userNumber = input()
+            userNumber = int(userNumber)
+
+        elif userNumber > randomInput:
+            print("less")
+            print("Choose a number between 0 and 10")
+            userNumber = input()
+            userNumber = int(userNumber)
+
+        else:
+            print("correct!")
+            break
+
+if __name__ == '__main__': #name (built-in) represents the name of the file we're in; #main is the script that we are running
+    main()
