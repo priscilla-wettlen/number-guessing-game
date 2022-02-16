@@ -1,4 +1,5 @@
 from random import randrange
+(randrange(10))
 
 def checkGuess(userInput, randomNum):
     if userInput == randomNum:
@@ -8,11 +9,12 @@ def checkGuess(userInput, randomNum):
     if userInput < randomNum:
         return 'More!'
 
+
 def main():
     result = checkGuess(2, 4)
     print(result)
 
-    (randrange(10))
+    
 
     randomInput = (randrange(10))
 
